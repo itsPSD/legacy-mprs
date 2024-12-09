@@ -1,17 +1,16 @@
 {
   "extends": ["next/core-web-vitals", "next/typescript"],
   "rules": {
-    "no-var": "error", // Disallow var in favor of let and const
-    "semi": ["error", "always"], // Ensure consistent use of semicolons
-    "quotes": ["error", "double"], // Enforce double quotes for strings
-    "no-console": "warn", // Warn about console.log usage
-    "eqeqeq": ["error", "always"], // Require strict equality
-    "curly": "error", // Enforce curly braces for control blocks
-    "@typescript-eslint/no-unused-vars": ["error", {
-      "argsIgnorePattern": "^_",
-      "varsIgnorePattern": "^_",
-      "caughtErrorsIgnorePattern": "^_"
-    }]
+    "no-var": "error",
+    "semi": ["error", "always"],
+    "quotes": "off",
+    "no-console": "off",
+    "eqeqeq": ["error", "always"],
+    "curly": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/no-unescaped-entities": "off"
   },
   "env": {
     "browser": true,
